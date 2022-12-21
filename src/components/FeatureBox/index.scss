@@ -1,0 +1,46 @@
+.card-spec2{
+    display: flex;
+    background-color: white;
+    background: transparentize(#fff, 0.8);
+	border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+	max-width: 100%;
+	margin: 20px;
+    padding: 50px;
+    position: relative;
+    border: 1px solid transparentize(#fff, 0.9);
+    text-shadow: 0 0 1em transparentize(#000, 0.9);
+    backdrop-filter: blur(20px);
+    .contnent{
+        padding-left: 50px;
+        
+    }
+    .contnent:hover{
+        color: #CC333F;
+        
+    }
+    .card-spec2-title{
+        font-size: 30px;
+    }
+    .card-spec2-descr{
+        font-size: 18px;
+
+    }
+    .card-spec2-icon{
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid transparentize(#000, 0.9);
+    background-color: white;
+    padding: 10px;
+
+        z-index: 2;
+        position: absolute;
+        margin:auto 0;
+    top: 0;
+    bottom: 0;
+    left: -50px;
+
+    font-size: 100px;
+    border-radius: 100%;
+    }
+}
