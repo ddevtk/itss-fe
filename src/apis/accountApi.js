@@ -8,6 +8,7 @@ const accountApi = {
   },
 
   postLogin: (email, password) => {
+    console.log(email, password);
     return axiosClient.post(`${URL}/login`, { email, password });
   },
 

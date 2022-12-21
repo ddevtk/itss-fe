@@ -4,8 +4,10 @@ import accountApi from 'apis/accountApi';
 export const getUserInfo = createAsyncThunk(
   'userInfo/getUserInfo',
   async () => {
+    console.log('hello from load');
     try {
       const apiRes = await accountApi.getUserInfo();
+      console.log(apiRes);
       if (apiRes && apiRes.status === 200) {
         return apiRes.data.user;
       }

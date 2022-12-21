@@ -15,7 +15,9 @@ function LoginData() {
       const { email, password } = account;
 
       const apiRes = await accountApi.postLogin(email.toLowerCase(), password);
+      console.log(apiRes);
       if (apiRes && apiRes.status === 200) {
+        window.localStorage.setItem('token', apiRes?.data?.token);
         dispatch(
           setMessage({ message: 'Đăng nhập thành công', type: 'success' }),
         );

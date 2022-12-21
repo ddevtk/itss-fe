@@ -24,6 +24,7 @@ function Logout() {
             setMessage({ type: 'success', message: 'Đăng xuất thành công' }),
           );
           window.location.href = history.location.pathname;
+          localStorage.removeItem('token');
         }
       } catch (error) {
         dispatch(
